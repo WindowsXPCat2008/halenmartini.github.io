@@ -1,9 +1,28 @@
-s*{
+*{
     padding: 0;
+	box-sizing: border-box;
+}
+/* please help there is so much junk in here */
+.blink {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.back {
+  color: white;
+  font-family: verdana;
+  font-size: 20px;
+  text-align: center;
 }
 
 body {
   background-color: #1d41e2;
+  text-align: center;
 }
 /* beginning of gallery CSS */
 div.gallery {
@@ -24,10 +43,6 @@ div.desc {
   text-align: center;
   color: white;
   font-family: verdana;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 .responsive {
@@ -77,7 +92,6 @@ h1 {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
 }
 //you aren't even using this just remove it already you cunt
 h2 {
@@ -116,9 +130,7 @@ a:active {
 }
 
 img {
-    text-align:center;
-}
-
-div {
-    text-align:center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
