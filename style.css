@@ -20,6 +20,10 @@
   text-align: center;
 }
 
+hr {
+  border-top: 1px solid white;
+}
+
 body {
   background-color: #1d41e2;
   text-align: center;
