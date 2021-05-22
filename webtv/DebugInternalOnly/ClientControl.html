@@ -1,0 +1,55 @@
+<!--- *=* Copyright 1998 WebTV Networks, Inc. All rights reserved. --->
+<html>
+
+<title>Client Control</title>
+
+<display nostatus skipback>
+
+<body bgcolor="#111111" text="#44bb55" link=#dddddd nohtilebg fontsize=medium>
+
+<br><h1>Client Control<hr></h1>
+
+<form action="client:TVDatabase">
+
+TV Database: 
+<select name=power>
+	<option value=nochange selected>No change
+	<option value=on>On
+	<option value=off>Off
+</select>
+
+Flush
+<select name=flush>
+	<option value=nochange selected>No change
+	<option value=disk>Disk
+</select>
+
+<input 
+	type=submit 
+	value="Change" 
+	usestyle>
+</form>
+
+<form action="client:DiskCache">
+
+Disk Cache:
+<select name=power>
+	<option value=nochange selected>No change
+	<option value=on>On
+	<option value=off>Off
+</select>
+
+Flush
+<select name=flush>
+	<option value=nochange selected>No change
+	<option value=disk>Disk
+</select>
+
+<input 
+	type=submit 
+	value="Change" 
+	usestyle>
+</form>
+
+
+</body>

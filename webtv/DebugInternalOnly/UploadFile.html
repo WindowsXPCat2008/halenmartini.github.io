@@ -1,0 +1,30 @@
+<!--- *=* Copyright 1998 WebTV Networks, Inc. All rights reserved. --->
+<html>
+
+<title>Upload a File</title>
+
+<display nostatus skipback>
+
+<body bgcolor="#111111" text="#44bb55" link=#dddddd nohtilebg fontsize=medium>
+
+<br><h1>Upload a File<hr></h1>
+
+<p><em>Warning!</em> The data will travel unencrypted outside of the
+firewall.</p>
+
+<form action="client:UploadFile">
+
+<p>Source: <input type=text name=src size=40 value="file://Disk/"></p>
+
+<p>Destination: <input type=text name=dest size=40 value="a@corp.webtv.net"></p>
+
+<p>File is binary: <input type=checkbox name=binary value=true></p>
+
+<input 
+	type=submit 
+	value="Upload" 
+	usestyle>
+</form>
+
+
+</body>
