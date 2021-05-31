@@ -1,10 +1,11 @@
 *{
-    padding: 0;
-	margin: 0;
+	padding: 0px;
+	margin: 0px;
 	box-sizing: border-box;
 }
 
 header {
+  padding: 0px;
   background-color: #000099;
   position: relative;
   width: 100%;
@@ -29,6 +30,7 @@ footer {
 }
 
 body {
+  margin: 0;
   background-color: #1d41e2;
   text-align: center;
   font-family: "Helvetica";
@@ -38,13 +40,15 @@ body {
 h1 { 
   color: white;
   font-size: 45px;
-  text-align: center;
+}
+
+h2 {
+	color: yellow;
 }
 
 p {
   color: white;
   font-size: 20px;
-  text-align: center;
 }
 
 marquee {
@@ -83,4 +87,8 @@ table, th, td {
   border-collapse: collapse;
   text-align: center;
   color: white;
+}
+
+hr {
+  border-top: 1px solid white;
 }
