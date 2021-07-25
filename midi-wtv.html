@@ -2,20 +2,53 @@
 <html>
    <head>
       <title>Halen Martini's Personal Website!</title>
-      <link type="text/css" rel="stylesheet" href="style.css"/>
+      <link type="text/css" rel="stylesheet" href="2019.css"/>
+	  <script>
+var allDynaText = "You are using WebTV which means you get an audioscope.";
+var nowDynaText = "";
+var dynaInd = 0;
+function updateFld() {	nowDynaText = allDynaText.substring(0, dynaInd++);
+document.wizForm.wizFld.value = nowDynaText;
+timerID = setTimeout( "updateFld()", 20 );
+}
+</script>
    </head>
-   <body>
+   <body transition="slideup" onLoad=updateFld()>
+   	  <br>
+	  <br>
       <h1>MIDI Files</h1>
 	  <hr>
-	  <audioscope height=50 width=861 rightoffset=5 bgcolor=#1d41e2>
-<a href="audio/sunflowerdaisy.mid">Sunflower Daisy</a>
-<br>
- <a href="audio/jazz1.mid">Jazz 1</a>
-<br>
- <a href="audio/fnkngrvn.mid">fnkngrvn</a>
+	  <audioscope gain="0" rightcolor="white" leftcolor="red" bgcolor="black" border=5 height=50 width=861></audioscope>
+	  	  <form name='wizForm'>
+<font size=-2 color=white>
+<input type=label name='wizFld' usestyle border=0 width=2000 nobackground noselect>
+</font>
+</form>
+	  <p>Aerosmith - Dream On (Karaoke)</p>
+	  <embed src="audio/Dream_On.mid">
+	  <p>Deep Purple - Smoke On The Water (Karaoke)</p>
+	  <embed src="audio/Smoke%20On%20The%20Water.mid">
+	  <p>The Beatles - A Hard Day's Night</p>
+	  <embed src="audio/A_Hard_Days_Night.mid">
+	  <p>The Beatles - Help!</p>
+	  <embed src="audio/HELP.mid">
+	  <p>WebTV Plus - Catacombs</p>
+	  <embed src="audio/Catamran.mid">
+	  <p>WebTV Plus - Groovy</p>
+	  <embed src="audio/groovy.mid">
+	  <p>Windows/Canon - CSSAMP1</p>
+	  <embed src="audio/CSSAMP1.mid">
+	  <p>Windows - Sunflower Daisy</p>
+	  <embed src="audio/sunflowerdaisy.mid"> 
+      <p>Windows - Jazz 1</p>
+	  <embed src="audio/jazz1.mid"> 
+	  <p>Windows - fnkngrvn</p>
+	  <embed src="audio/fnkngrvn.mid">
+	  <p>Windows - MPCMID</p>
+	  <embed src="audio/MPCMID.mid"> 
 <hr>
 <div class="back">
-<a href="index.html">Back</a>
+<a href="index-old.html">Back</a>
 </div>
    </body>
 </html>

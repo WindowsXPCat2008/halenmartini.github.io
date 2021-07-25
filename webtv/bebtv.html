@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>sex</title>
+<script>
+var allDynaText = "You are using WebTV which means you are cool!";
+var nowDynaText = "";
+var dynaInd = 0;
+function updateFld() {	nowDynaText = allDynaText.substring(0, dynaInd++);
+document.wizForm.wizFld.value = nowDynaText;
+timerID = setTimeout( "updateFld()", 20 );
+}
+</script>
+</head>
+<body onLoad=updateFld()>
+<form name='wizForm'>
+<font size=-2 color=black>
+<input type=label name='wizFld' usestyle border=0 width=2000 nobackground noselect>
+</font>
+</form>
+</body>
+</html>
