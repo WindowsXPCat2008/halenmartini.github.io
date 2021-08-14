@@ -97,27 +97,17 @@ p {
 }
 
 a:link {
-  font-size: 25px;
+  font-size: 15px;
   color: white; 
   background-color: transparent; 
   text-decoration: none;
 }
 
 a:visited {
+  font-size: 15px;
   color: white;
   background-color: transparent;
   text-decoration: none;
-}
-
-a:hover {
-    color: lightgray;
-    transition: color white 0.25s ease;
-}
-
-a:active {
-  color: blue;
-  background-color: transparent;
-  text-decoration: underline;
 }
 
 img {
